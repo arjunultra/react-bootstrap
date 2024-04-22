@@ -6,7 +6,7 @@ const Advantage = () => {
         height: '13em',
     }
   return (
-    <div className='d-md-flex bg-danger w-100'>
+    <div className='d-md-flex bg-danger'>
         <div style={imageContainerStyles} className='image-container w-100 w-md-50 mb-4 pb-5'>
             <img className='img-fluid object-fit-cover' src={House} alt="house" />
         </div>
