@@ -4,8 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function BrandNavbar() {
   return (
-    <Navbar data-bs-theme="dark" expand="lg" className="bg-body-primary bg-primary ">
-      <Container>
+    <Navbar data-bs-theme="dark" expand="lg" className="bg-primary container-fluid">
         <Navbar.Brand href="#home">SUNCOAT PAINTS & EMULSIONS</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -15,7 +14,6 @@ function BrandNavbar() {
             <Nav.Link className='text-light' href="#link">About Us</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-      </Container>
     </Navbar>
   );
 }

@@ -1,6 +1,14 @@
 // Your variable overrides
-$primary: #0099ff;
-
+$primary: #ff5100;
+// html
+html {
+  display: flex;
+}
+@media (min-width: 768px) { 
+  html {
+    display: block;
+  }
+ }
 // HeroCarousel
 .image-container {
     width: 100%; /* Full width */
