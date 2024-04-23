@@ -1,9 +1,11 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Element } from 'react-scroll';
 import { VscAccount } from "react-icons/vsc";
 
 function ReviewCards() {
   return (
+    <Element name="products" className="element">
     <Card className='d-flex align-items-center justify-content-center bg-warning' style={{ width: '30rem' }}>
       <VscAccount className='display-1' />
       <Card.Body>
@@ -15,6 +17,7 @@ function ReviewCards() {
         <Button className='d-block mx-auto'  variant="success">Buy Now</Button>
       </Card.Body>
     </Card>
+    </Element>
   );
 }
 

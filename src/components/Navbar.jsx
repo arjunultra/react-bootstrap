@@ -1,19 +1,19 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import React from 'react';
+import { Navbar, Nav } from 'react-bootstrap';
+import { Link } from 'react-scroll';
 
 function BrandNavbar() {
   return (
-    <Navbar data-bs-theme="dark" expand="lg" className="bg-primary container-fluid">
-        <Navbar.Brand href="#home">SUNCOAT PAINTS & EMULSIONS</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link className='text-light' href="#home">Home</Nav.Link>
-            <Nav.Link className='text-light' href="#link">Products</Nav.Link>
-            <Nav.Link className='text-light' href="#link">About Us</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
+    <Navbar data-bs-theme="light" expand="lg" className="bg-primary container-fluid">
+      <Navbar.Brand href="#home">SUNCOAT PAINTS & EMULSIONS</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="me-auto">
+          <Link className='nav-link text-light' to="home" spy={true} smooth={true} duration={500}>Home</Link>
+          <Link className='nav-link text-light' to="products" spy={true} smooth={true} duration={500}>Products</Link>
+          <Link className='nav-link text-light' to="aboutus" spy={true} smooth={true} duration={500}>About Us</Link>
+        </Nav>
+      </Navbar.Collapse>
     </Navbar>
   );
 }

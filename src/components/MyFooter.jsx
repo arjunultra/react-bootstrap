@@ -1,7 +1,7 @@
-
+import { Element } from 'react-scroll';
 const MyFooter = () => {
   return (
-    <>
+    <Element name="aboutus" className="element">
     <footer className="text-center text-lg-start bg-dark text-warning">
   {/* <!-- Grid container --> */}
   <div className="container p-4 bg-dark">
@@ -42,7 +42,7 @@ const MyFooter = () => {
   </div>
   {/* console.log('<!-- Copyright -->'); */}
 </footer>
-    </>
+</Element>
   )
 }
 

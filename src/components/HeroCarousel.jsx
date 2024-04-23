@@ -2,10 +2,12 @@ import Carousel from 'react-bootstrap/Carousel';
 import NewImage1 from '../assets/paint.png';
 import NewImage2 from '../assets/paint2.png';
 import NewImage3 from '../assets/paint3.png';
+import { Element } from 'react-scroll';
 import '../custom.scss'; // Import the CSS file
 
 function HeroCarousel() {
   return (
+    <Element name="home" className="element">
     <Carousel>
       <Carousel.Item>
         <div className="image-container">
@@ -35,6 +37,7 @@ function HeroCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+    </Element>
   );
 }
 
